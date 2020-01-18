@@ -340,7 +340,7 @@ function ApplyModifiers(s, action, condition) {
 
     if (AllActions.innovation.shortName in s.effects.countDowns) {
         bQualityGain += Math.floor(0.2 * bQualityGain);
-        bProgressGain +=  Math.floor(0.2 * bProgressGain);
+        progressIncreaseMultiplier += 0.2;
     }
 
     bProgressGain = progressIncreaseMultiplier * bProgressGain;
